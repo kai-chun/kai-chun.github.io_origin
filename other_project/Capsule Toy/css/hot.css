@@ -1,0 +1,13 @@
+@import './reset.css'
+
+.header{
+    height: 150px;
+    width: 100vw;
+    
+}
+
+.menu {
+    height: 70vh;
+    width: 300px;
+    float: left;
+}
