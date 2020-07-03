@@ -1,0 +1,267 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1024px;
+    font-family: BlinkMacSystemFont;
+}
+
+h1 {
+    font-size: 80px;
+    line-height: 95px;
+    padding-bottom: 24px;
+    border-bottom: 2px solid black;
+    margin-top: 40px;
+    margin-bottom: 48px;
+}
+
+.content {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 36px;
+}
+
+.content img{
+    width: 300px;
+    height: 300px;
+    margin-bottom: 48px;
+}
+
+.content h2{
+    font-size: 32px;
+    line-height: 48px;
+    font-weight: 450;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+}
+
+.content span{
+    color: #A00404;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29px;
+    margin-left: 16px;
+}
+
+.profile ul, .education ul{
+    list-style: none;
+}
+
+.profile li, .education li{
+    margin-bottom: 24px;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.education h2{
+    margin-top: 48px;
+}
+
+.education ul {
+    border-left: 1px solid #96A9C4;
+    margin-left: 24px;
+    padding-left: 24px;
+}
+
+.education .bold_style {
+    font-weight: 400;
+}
+
+.education p {
+    width: 642px;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 300;
+}
+
+.skill {
+    background: #415165;
+    color: white;
+    text-align: center;
+    padding-top: 24px;
+    padding-bottom: 52px;
+    margin: 72px auto 56px auto;
+}
+
+.skill h3 {
+    width: 996px;
+    font-size: 32px;
+    line-height: 45px;
+    font-weight: normal;
+    border-bottom: 1px solid white;
+    margin: 0px auto 40px auto;
+    padding-bottom: 8px;
+}
+
+.skill span {
+    color: white;
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 500;
+}
+
+.skill_inner {
+    display: flex;
+    /*align-content: center;
+    justify-content: center;*/
+}
+
+.left_part, .right_part{
+    margin-left: 180px;
+}
+
+.skill_inner h4 {
+    color: white;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: left;
+    margin-left: 24px;
+    margin-bottom: 20px;
+}
+
+.skill_inner ul {
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: lighter;
+    border-left: 1px solid #96A9C4;
+    padding-left: 24px;
+    text-align: left;
+}
+
+.margin1 {
+    margin-bottom: 20px;
+}
+
+.work_experience_content {
+    border-left: 1px solid #96A9C4;
+    margin-left: 24px;
+    padding-left: 24px;
+}
+
+.work_experience h4{
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 400;
+}
+
+.work_experience_content ul {
+    margin-left: 24px;
+    margin-bottom: 32px;
+}
+
+.work_experience li{
+    width: 630px;
+    list-style-type: disc;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 300;
+}
+
+.footer {
+    background-size: cover;
+    background-color: #415165;
+    margin-top: 76px;
+}
+
+.footer_inner {
+    width: 1024px;
+    padding-top: 24px;
+    padding-bottom: 48px;
+    text-align: center;
+    color: white;
+    font-family: BlinkMacSystemFont;
+    margin: 0px auto;
+}
+
+.footer h3 {
+    font-size: 32px;
+    line-height: 45px;
+    font-weight: normal;
+    border-bottom: 1px solid white;
+    margin: 0px auto 40px auto;
+    padding-bottom: 8px;
+}
+
+.footer span {
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 400;
+    margin-left: 16px;
+}
+
+.footer ul {
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: lighter;
+}
+
+.footer li {
+    margin-bottom: 16px;
+}
+
+.footer img {
+    width: 48px;
+    height: 48px;
+    margin: 4px 12px 0px 12px;
+}
+
+.footer img:hover {
+    transform: scale(1.1);
+}
