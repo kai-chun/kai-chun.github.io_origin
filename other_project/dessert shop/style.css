@@ -1,0 +1,429 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	font-family: sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+img{
+	display: block;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+.container{
+	max-width: 1024px;
+	color: #3F5D45;
+	margin: 0 auto;
+}
+
+.container a{
+	text-decoration: none;
+	color: #3F5D45;
+}
+
+.container img{
+	max-width: 100%;
+	height: auto;
+}
+
+.header{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px 0;
+}
+
+.ham{
+	display: none;
+	margin: 30px;
+}
+
+.header h1{
+	background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logo-all-dark.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 220px;
+	height: 40px;
+	margin: 15px 30px;
+}
+
+.header ul{
+	display: flex;
+	align-items: center;
+}
+
+.header li a{
+	display: block;
+	font-size: 16px;
+	font-weight: 600;
+	padding: 15px 30px;
+}
+
+.header li a:hover{
+	color: #EAF0ED;
+}
+
+.header li img{
+	padding: 15px 20px 15px 39px;
+}
+
+@media (max-width: 375px){
+	.ham{
+		display: block;
+	}
+	.header h1{
+		background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logotype-sm-dark.svg");
+		width: 30%;
+		margin: 0;
+	}
+	.header li a{
+		display: none;
+	}
+}
+
+.banner{
+	margin-bottom: 50px;
+}
+
+.banner img{
+	margin: 0 auto;
+}
+
+.content{
+	display: flex;
+	justify-content: space-between;
+}
+
+.sidebar{
+	width: 30%;
+	font-size: 24px;
+	text-align: center;
+	margin: 10px;
+}
+
+.darkGreen-style{
+	background-color: #3F5D45;
+	color: #EAF0ED;
+}
+
+.sidebar .darkGreen-style{
+	padding: 16px 0;
+}
+
+.sidebar li a{
+	display: block;
+	padding: 16px 0;
+	border: 1px solid #EAF0ED;
+}
+
+.sidebar li a:hover{
+	background-color: #EAF0ED;
+}
+
+.limeGreen-style{
+	background-color: #EAF0ED;
+}
+
+@media (max-width: 375px){
+	.content{
+		flex-direction: column;
+	}
+	.banner{
+		margin-bottom: 0px;
+	}
+	.sidebar{
+		width: 100%;
+		margin: 0px;
+	}
+}
+
+.content-inner{
+	width: 70%;
+}
+
+.content-inner ul{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.content-inner li{
+	margin: 10px;
+}
+
+.product-pic-inner{
+	position: relative;
+}
+
+.product-pic-inner h3{
+	width: 36px;
+	position: absolute;
+	left: 20px;
+	font-size: 16px;
+	line-height: 20px;
+	padding: 10px;
+}
+
+.product-pic-inner .favorite{
+	position: absolute;
+	top: 19px;
+	right: 22px;
+	width: 24px;
+}
+
+.product-info{
+	display: flex;
+	font-size: 20px;
+	text-align: center;
+	border: 1px solid #EAF0ED;
+}
+
+.product-info h2{
+	width: 58%;
+	font-weight: 300;
+	padding: 14px 0;
+}
+
+.product-info p{
+	width: 42%;
+	border-left: 1px solid #EAF0ED;
+	padding: 14px 0;
+}
+
+.content-inner a{
+	display: block;
+	font-size: 24px;
+	padding: 16px 90px;
+}
+
+.content-inner a:hover{
+	background-color: #3F5D45;
+	color: #EAF0ED;
+}
+
+@media (max-width: 375px){
+	.content-inner{
+		width: 100%;
+	}
+	.content-inner li{
+		margin: 30px 0 0 0 ;
+	}
+}
+
+.pageNum ul{
+	display: flex;
+	justify-content: flex-end;
+	margin: 30px 0 60px 0;
+}
+
+.pageNum a{
+	display: block;
+	font-size: 20px;
+	padding: 20px 26px;
+	border: 1px solid #EAF0ED;
+}
+
+.darkGreen-style a{
+	color: #EAF0ED;
+	border: 1px solid #3F5D45;
+}
+
+.arrow a{
+	padding: 18px;
+}
+
+.pageNum a:hover{
+	background-color: #EAF0ED;
+}
+
+.darkGreen-style a:hover{
+	background-color: #3F5D45;
+}
+
+@media (max-width: 375px){
+	.pageNum ul{
+		margin: 30px 0;
+		justify-content: center;
+	}
+}
+
+.email {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	background-color: #3F5D45;
+	padding: 15px 0;
+}
+
+.email-tag{
+	display: flex;
+	align-items: center;
+	margin: 15px 60px;
+}
+
+.email-tag p{
+	color:#EAF0ED;
+	font-size: 24px;
+}
+
+.email-tag img{
+	width: 40px;
+	margin-right: 20px;
+}
+
+.email-input{
+	display: flex;
+	position: relative;
+	margin: 15px 60px;
+}
+
+.email-input input{
+	width: 316px;
+	height: 56px;
+	background-color: #EAF0ED;
+	padding: 0 20px 0 60px;
+	border: none;
+}
+
+.email-input img{
+	position: absolute;
+	top: 16px;
+	left: 20px;
+}
+
+.email-input button{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 64px;
+	background-color: #FFE180;
+	border: none;
+}
+
+.email-input button img{
+	position: initial;
+}
+
+@media (max-width: 375px){
+	.email-tag, .email-input{
+		margin: 15px 0;
+	}
+	.email-input input{
+		width: 251px;
+	}
+}
+
+.footer-inner{
+	display: flex;
+	justify-content: space-around;
+	background-color: #EAF0ED;
+	padding: 30px 0;
+}
+
+.info-left img{
+	width: 180px;
+}
+
+.info-left p{
+	font-size: 16px;
+	line-height: 24px;
+	margin: 110px 0 30px 0;
+}
+
+.info-left ul{
+	display: flex;
+}
+
+.info-left ul img{
+	width: 32px;
+}
+
+.margin-right{
+	margin-right: 8px;
+}
+
+.text{
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+.info-right h3{
+	writing-mode: vertical-rl;
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 24px;
+	line-height: 30px;
+	margin-bottom: 46px;
+}
+
+.text .margin-top{
+	margin-top: 12px;
+}
+
+.info-right p{
+	font-size: 16px;
+}
+
+@media (max-width: 375px){
+	.footer-inner{
+		flex-direction: column;
+		align-items: center;
+	}
+	.info-left, .info-right{
+		width: 80%;
+	}
+	.info-left p{
+		margin-top: 40px;
+	}
+	.info-left ul{
+		margin-bottom: 30px;
+	}
+	.text{
+		display: none;
+	}
+}
