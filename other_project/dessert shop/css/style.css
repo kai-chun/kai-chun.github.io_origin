@@ -81,7 +81,7 @@ a{
 }
 
 .header li a:hover{
-	color: #EAF0ED;
+	background-color: #EAF0ED;
 }
 
 @keyframes header_item-active{
@@ -126,9 +126,11 @@ a{
 		top: 100%;
 		width: 100%;
 		background-color: #fff;
-		text-align: center;
 		overflow: hidden;
 		opacity: 0%;
+	}
+	.header_item li a{
+		padding: 15px 100px;
 	}
 	@keyframes header_item-hide{
 		from { opacity: 100%; }
@@ -138,8 +140,7 @@ a{
 	.header .hide{
 		max-height: 200px;
 		animation: header_item-hide;
-		animation-duration: 1s;
-		animation-fill-mode: forwards;
+		animation-duration: 0.5s;
 	}
 }
 
