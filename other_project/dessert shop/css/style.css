@@ -68,7 +68,7 @@ a{
 	align-items: center;
 }
 
-.header ul{
+.header_item{
 	display: flex;
 	align-items: center;
 }
@@ -84,16 +84,9 @@ a{
 	background-color: #EAF0ED;
 }
 
-@keyframes header_item-active{
-	from { opacity: 0%; }
-	to { opacity: 100%; }
-}
-
 .header .active{
 	max-height: 200px;
-	animation: header_item-active;
-	animation-duration: 1s;
-	animation-fill-mode: forwards;
+	opacity: 100%;
 }
 
 .header img{
@@ -128,19 +121,7 @@ a{
 		background-color: #fff;
 		overflow: hidden;
 		opacity: 0%;
-	}
-	.header_item li a{
-		padding: 15px 100px;
-	}
-	@keyframes header_item-hide{
-		from { opacity: 100%; }
-		to { opacity: 0%; }
-	}
-	
-	.header .hide{
-		max-height: 200px;
-		animation: header_item-hide;
-		animation-duration: 0.5s;
+		transition: all 1s;
 	}
 }
 
