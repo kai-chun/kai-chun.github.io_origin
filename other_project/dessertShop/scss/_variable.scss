@@ -1,0 +1,33 @@
+$lilyWhite: #EAF0ED;
+$darkGreen: #3F5D45;
+$goldenGlow: #FFE180;
+$limeGreen: #8DA291;
+
+@mixin hide-text{
+	text-indent: 101%;	
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+@mixin darkGreen-style{
+    background-color: $darkGreen;
+	color: $lilyWhite;
+}
+
+@mixin large-size{
+	@media (max-width: 767px){
+		@content;
+	}
+}
+
+@mixin medium-size{
+	@media (max-width: 576px){
+		@content;
+	}
+}
+
+@mixin small-size{
+	@media (max-width: 414px){
+		@content;
+	}
+}
