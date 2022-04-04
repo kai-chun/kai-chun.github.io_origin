@@ -1,20 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KaiChun's Blog</title>
-  <link rel="stylesheet" href="css/_reset.css">
-  <link rel="stylesheet" href="css/_layout.css">
-  <link rel="stylesheet" href="css/home.css">
-  <script src="js/jquery.min.js"></script>
-  <script src="js/main.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KaiChun's Blog</title>
+    <link rel="stylesheet" href="css/_reset.css">
+    <link rel="stylesheet" href="css/_layout.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 <body>
-  <div class="headerPage"></div>
-  <div class="container">
-
-  </div>
-  <div class="footerPage"></div>
+    <div class="header_page"></div>
+    <div class="container">
+        <div class="banner">
+            <!-- Photo by <a href="https://unsplash.com/@asoggetti?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Alessio Soggetti</a> 
+                on <a href="https://unsplash.com/s/photos/mounatins?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            -->
+            <h2>Stay hungry, stay foolish.</h2>
+        </div>
+        <div class="about_me">
+            <div class="profile">
+                <img src="img/myPic.png" alt="me">
+                <h3>楊凱鈞 KaiChun Yang</h3>
+            </div>
+            <div class="say_something">
+                <p>嗨，這裡記錄了關於我的資訊及作品。</p>
+                <p>Click the links below to know more about me.</p>
+                <ul>
+                    <li><a href="https://kai-y.medium.com/">
+                        <img src="img/medium-logo.png" alt="Medium logo">
+                        <h4>Medium: 技術筆記</h4>
+                    </a></li>
+                    <li><a href="https://codepen.io/kaiiichun/collections/">
+                        <img src="img/codepen.png" alt="CodePen logo">
+                        <h4>CodePen: 前端練習</h4>
+                    </a></li>
+                    <li><a href="###">
+                        <img src="img/reporting.png" alt="My research">
+                        <h4>Master's Research <br>(not finish yet QQ)</h4>
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="other_project">
+            <h3>Recent Projects</h3>
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img src="img/HTML_final.png" alt="HTML final">
+                        <h4></h4>
+                    </div>
+                    <div class="swiper-slide"><img src="img/bmi_calculator.png" alt="bmi_calculator"></div>
+                    <div class="swiper-slide"><img src="img/dessertShop.png" alt="dessertShop"></div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </div>
+    <div class="footer_page"></div>
+    <a class="top" href="#"><img src="../img/up-arrow.png" alt="up-arrow"></a>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
+
 </html>

@@ -1,2 +1,125 @@
 /* container */
+.banner {
+    width: 100%;
+    height: 500px;
+    background-image: url('../img/alessio-soggetti-gdE-5Oui1Y0-unsplash.jpg');
+    /* Photo by <a href="https://unsplash.com/@asoggetti?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Alessio Soggetti</a> 
+    on <a href="https://unsplash.com/s/photos/mounatins?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+     */
+    background-size: cover;
+    position: relative;
+}
 
+.banner h2 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-family: "EastSeaDokdo", sans-serif;
+    font-size: 50px;
+    color: var(--Arapawa);
+    padding: 20px;
+}
+
+.about_me {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.profile {
+    text-align: center;
+}
+
+.profile img {
+    width: 200px;
+    margin: 0 auto;
+}
+
+.about_me h3 {
+    font-size: 20px;
+    color: var(--PaleSky);
+    margin-top: 20px;
+}
+
+.say_something {
+    width: 60%;
+    /* border: 4px dashed rgba(97, 111, 117, 0.3); */
+    padding: 10px;
+}
+
+.say_something p {
+    margin: 20px 10px;
+}
+
+.say_something img {
+    display: block;
+    margin: 10px auto 20px auto;
+    height: 80px;
+}
+
+.say_something ul {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.say_something li {
+    width: 300px;
+    margin: 0 10px;
+}
+
+.say_something li a{
+    text-align: center;
+    padding: 10px;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    transition: .5s;
+}
+
+.say_something a:hover {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.other_project h3 {
+    position: relative;
+    text-align: center;
+    font-family: OpenSans, sans-serif;
+    font-size: 30px;
+    padding: 20px;
+    color: var(--DarkBlue);
+}
+
+.other_project h3::before, .other_project h3::after{
+    content: "";
+    width: 35%;
+    border-top: 2px solid var(--DarkBlue);
+    position: absolute;
+    top: 50%;
+}
+
+.other_project h3::before {
+    left: 10px;
+}
+
+.other_project h3::after {
+    right: 10px;
+}
+
+.other_project .swiper {
+    width: 100%;
+    height: 400px;
+}
+
+.other_project .swiper img{
+    width: 100%;
+    height: auto;
+}
+
+.other_project .swiper-pagination-bullet-active {
+    background-color: var(--AirForceBlue);
+}
+
+.other_project .swiper-button-prev, .other_project .swiper-button-next, .other_project .swiper-pagination {
+    color: var(--AirForceBlue);
+}

@@ -1,16 +1,15 @@
-.content {
+.content p {
     font-size: 24px;
     font-weight: 300;
     line-height: 36px;
 }
 
-.content img{
-    width: 300px;
-    height: 300px;
-    margin-bottom: 48px;
+.content img {
+    width: 250px;
+    height: 250px;
 }
 
-.content h2{
+.content h2 {
     font-size: 32px;
     line-height: 48px;
     font-weight: 450;
@@ -21,126 +20,138 @@
     margin-bottom: 16px;
 }
 
+.content h3 {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+}
+
 .content span{
-    color: #A00404;
+    color: var(--AirForceBlue);
     font-size: 24px;
     font-weight: 600;
-    line-height: 29px;
+    line-height: 30px;
     margin-left: 16px;
 }
 
-.profile ul, .education ul{
-    list-style: none;
+.profile h1 {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 20px;
 }
 
-.profile li, .education li{
+.profile_inner {
+    display: flex;
+    align-items: center;
+}
+
+.profile_inner div {
+    margin: 0 50px;
+}
+
+.profile_inner a {
+    display: block;
+    width: 150px;
+    margin-top: 30px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    background-color: var(--PaleSky);
+    border-radius: 3px;
+}
+
+.profile_inner a:hover {
+    background-color: var(--PaleSky);
+}
+
+.education li{
     margin-bottom: 24px;
 }
 
-.bold {
-    font-weight: 600;
+.profile p, .education p, .work_experience_content li {
+    font-size: 16px; 
+    line-height: 30px;
+    font-weight: 300;
 }
 
-.education h2{
+.profile h2, .education {
     margin-top: 48px;
 }
 
-.education ul {
-    border-left: 1px solid #96A9C4;
+.education ul, .work_experience_content{
+    border-left: 2px solid var(--AirForceBlue);
     margin-left: 24px;
     padding-left: 24px;
 }
 
-.education .bold_style {
-    font-weight: 400;
+.education h3, .education h4, .work_experience_content h3 {
+    position: relative;
 }
 
-.education p {
-    width: 642px;
-    font-size: 20px;
-    line-height: 30px;
-    font-weight: 300;
+.education h3:before, .work_experience_content h3:before{
+    content: " ";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    border: 4px solid var(--AirForceBlue);
+    border-radius: 100%;
+    background-color: white;
+    top: 8px;
+    left: -37px;
+    z-index: 1000;
+}
+
+.education h4:before {
+    content: " ";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border: 4px solid var(--AirForceBlue);
+    border-radius: 100%;
+    background-color: white;
+    top: 10px;
+    left: -34px;
+    z-index: 1000;
 }
 
 .skill {
     background: #415165;
     color: white;
     text-align: center;
-    padding-top: 24px;
-    padding-bottom: 52px;
-    margin: 72px auto 56px auto;
+    padding: 20px 40px;
+    margin: 50px auto;
 }
 
-.skill h3 {
-    width: 996px;
-    font-size: 32px;
-    line-height: 45px;
-    font-weight: normal;
+.skill h2 {
+    display: block;
     border-bottom: 1px solid white;
-    margin: 0px auto 40px auto;
+    margin: 0px auto 20px auto;
     padding-bottom: 8px;
 }
 
 .skill span {
     color: white;
-    font-size: 24px;
-    line-height: 29px;
-    font-weight: 500;
 }
 
 .skill_inner {
+    width: 600px;
+    margin: 0 auto;
     display: flex;
-    /*align-content: center;
-    justify-content: center;*/
-}
-
-.left_part, .right_part{
-    margin-left: 180px;
-}
-
-.skill_inner h4 {
-    color: white;
-    font-size: 24px;
-    font-weight: 400;
+    justify-content: space-between;
     text-align: left;
-    margin-left: 24px;
-    margin-bottom: 20px;
 }
 
 .skill_inner ul {
-    font-size: 24px;
-    line-height: 36px;
-    font-weight: lighter;
+    font-size: 20px;
     border-left: 1px solid #96A9C4;
     padding-left: 24px;
-    text-align: left;
 }
 
-.margin1 {
-    margin-bottom: 20px;
-}
-
-.work_experience_content {
-    border-left: 1px solid #96A9C4;
-    margin-left: 24px;
-    padding-left: 24px;
-}
-
-.work_experience h4{
-    font-size: 24px;
-    line-height: 36px;
-    font-weight: 400;
+.skill_inner li {
+    margin: 10px 0;
 }
 
 .work_experience_content ul {
-    margin-left: 24px;
-    margin-bottom: 32px;
-}
-
-.work_experience li{
-    width: 630px;
+    margin: 10px 0 32px 24px;
     list-style-type: disc;
-    font-size: 20px;
-    line-height: 30px;
-    font-weight: 300;
 }

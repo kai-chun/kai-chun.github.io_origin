@@ -4,83 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KaiChun's Blog</title>
-  <link rel="stylesheet" href="css/_reset.css">
-  <link rel="stylesheet" href="css/_layout.css">
-  <link rel="stylesheet" href="css/about_me.css">
-  <script src="js/jquery.min.js"></script>
-  <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/_reset.css">
+    <link rel="stylesheet" href="css/_layout.css">
+    <link rel="stylesheet" href="css/about_me.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 <body>
-    <div class="headerPage"></div>
+    <div class="header_page"></div>
     <div class="container">
         <div class="content">
             <div class="profile">
-                <img src="img/myPic.png" alt="my photo">
                 <h2>個人資料<span>PROFILE</span></h2>
-                <ul>
-                    <li>
-                        <p>楊凱鈞 KaiChun Yang<br>國立中興大學 資工所碩一 / 往軟體工程師之路邁進</p>
-                    </li>
-                    <li>
-                        <p class="bold">"Stay hungry, stay foolish."</p>
-                        <p>正在學習 JavaScript / 網路 / 資訊安全</p>
-                    </li>
-                </ul>
+                <div class="profile_inner">
+                    <img src="img/myPic.png" alt="my photo">
+                    <div>
+                        <h1>楊凱鈞 KaiChun Yang</h1>
+                        <p>國立中興大學 資工所碩二 / 軟體工程師</p>
+                        <p>"Stay hungry, stay foolish."</p>
+                        <a href="https://www.cakeresume.com/s--mdRlfp6BnLUvqCpO422ySw--/kaichunyang" target="_blank">Read My CV</a>
+                    </div>
+                </div>
             </div>
             <div class="education">
                 <h2>學歷<span>EDUCATION</span></h2>
                 <ul>
-                    <li class="bold_style">國立中興大學 資訊科學與工程學系 碩士 | 2020－</li>
-                    <li class="bold_style">輔仁大學 資訊管理學系 | 2015－2019
+                    <li>
+                        <h3>國立中興大學 資訊工程學系 碩士 | 2020-2022</h3>
+                        <p>加入網路運算實驗室，研究⽅向為 SDN (Software-Defined Networking)、NFV (Network Functions Virtualization)、
+                            多播路由等相關議題，學習獨立思考、⽂獻閱讀以培養解決問題之能⼒。</p>
+                    </li>
+                    <li>
+                        <h3>輔仁大學 資訊管理學系 | 2015-2019</h3>
                         <p>在學過程認真積極，並在課餘時間自學程式語言，參與多項競賽、講座。</p>
                         <p>畢業專題為利用 VR 建構懷舊情境，提供予年長者使用。</p>
                     </li>
-                    <li>- 輔系 資訊工程學系</li>
-                    <li>- 體感互動設計微學分學程</li>
+                    <li><h4>輔系 資訊工程學系</h4></li>
+                    <li><h4>體感互動設計微學分學程</h4></li>
                 </ul>
             </div>
             <div class="skill">
-                <h3>技能<span>SKILLS</span></h3>
+                <h2>技能<span>SKILLS</span></h2>
                 <div class="skill_inner">
-                    <div class="left_part">
-                        <h4>程式設計</h4>
+                    <div>
+                        <h3>程式設計</h3>
                         <ul>
-                            <li class="margin1">Java, C++, C#, Python</li>
-                            <li class="margin1">HTML, CSS</li>
-                            <li class="margin1">JavaScript</li>
-                            <li>Processing</li>
+                            <li>Java, C++, Python</li>
+                            <li>HTML, CSS</li>
+                            <li>JavaScript</li>
                         </ul>
                     </div>
-                    <div class="right_part">
-                        <h4>工具</h4>
+                    <div>
+                        <h3>工具</h3>
                         <ul>
-                            <li class="margin1">Unity</li>
-                            <li class="margin1">Unreal Engine</li>
-                            <li>Arduino</li>
+                            <li>Unity</li>
+                            <li>Github</li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="work_experience">
                 <h2>工作經驗<span>WORK EXPERIENCE</span></h2>
-                <div class="work_experience_content">
-                    <h4>知之有限公司 軟體測試實習生 | 2019/03－2019/06</h4>
-                    <ul>
-                        <li>實習期間，測試公司軟體產品功能，且收集使用者回饋之問題並重現，與工程師、設計師合作加速解決所遇到的軟體錯誤。</li>
-                        <li>學習如何以 Python 撰寫測試腳本。</li>
-                    </ul>
-                    <h4>畢業專題系統發表優秀組別 | 2018/03－2018/12</h4>
+                <ul class="work_experience_content">
+                    <li>
+                        <h3>六角學院 網頁排版助教 | 2021/06 - </h3>
+                        <ul>
+                            <li>協助批改學員之 HTML, CSS, jQuery 作業，並以文字提供作業建議及回覆同學之提問。</li>
+                            <li>過程中不僅加深⾃⼰對於前端知識的理解，也學會如何簡潔地闡述程式概念及表達⾃⼰的想法。</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Snapask 知之有限公司 軟體測試實習生 | 2019/03－2019/06</h4>
+                        <ul>
+                            <li>實習期間，測試公司軟體產品功能，且收集使用者回饋之問題並重現，與工程師、設計師合作加速解決所遇到的軟體錯誤。</li>
+                        </ul>
+                    </li>
+                    
+                    <h3>畢業專題系統發表優秀組別 | 2018/03－2018/12</h4>
                     <ul>
                         <li>專題名稱：利用虛擬實境建置銀髮族之懷舊情境</li>
                         <li>利用 Unreal Engine 及 HTC VIVE 實作 VR 系統，希望透過此系統協助年長者增進心理健康。</li>
                         <li>習得閱讀懷舊治療相關論文。從中搜集資料，並基於研究資料實作適合年長者之系統。</li>
-                        <li>與公共衛生學系、護理系師生合作，學習如何結合跨領域知識發展系統；並實際予以年長者試用、訪談其心得，得到年長者之正向回饋及建議。</li>
-                        <li>入圍第23屆全國大專院校資訊應用服務創新競賽</li>
                     </ul>
-                </div>
+                </ul>
             </div>
         </div>    
     </div>
-    <div class="footerPage"></div>
+    <div class="footer_page"></div>
+    <a class="top" href="#"><img src="../img/up-arrow.png" alt="up-arrow"></a>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
