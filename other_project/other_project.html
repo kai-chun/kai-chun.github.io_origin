@@ -5,16 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KaiChun's Blog</title>
 
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/main.js"></script>
-
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/layout.css">
     <link rel="stylesheet" href="../css/other_project.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 <body>
-    <div class="header_page"></div>
+    <header>
+        <div class="header_inner">
+            <h1><a href="index.html">KAICHUN YANG</a></h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="../about_me/about_me.html">About</a></li>
+                <li><a href="../other_project/other_project.html">Projects</a></li>
+            </ul>
+        </div>
+    </header>
     <div class="container">
         <h2>Recent Projects</h2>
         <ul class="project_list">
@@ -68,8 +74,22 @@
             </li>
         </ul>
     </div>
-    <div class="footer_page"></div>
+    <footer>
+        <div class="footer_inner">
+            <h3>CONTACT METHOD</h3>
+            <ul>
+                <li><a href="mailto:kaiiichun.y@gmail.com">kaiiichun.y@gmail.com</a></li>
+                <li>Taichung, Taiwan</li>
+            </ul>
+            <div class="link">
+                <a href="https://www.facebook.com/KaiChun.Yaaang" target="_blank"><img src="img/facebook.png" alt="facebook"></a>
+                <a href="https://kai-y.medium.com/" target="_blank"><img src="img/medium.png" alt="medium" class="medium_logo"></a>
+                <a href="https://github.com/kai-chun" target="_blank"><img src="img/github.png" alt="github"></a>
+            </div>
+        </div>
+    </footer>
     <a class="top" href="#"><img src="../img/up-arrow.png" alt="up-arrow"></a>
-    
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

@@ -1,7 +1,4 @@
 $(document).ready(function () {
-    $(".header_page").load("../layout/header.html");
-    $(".footer_page").load("../layout/footer.html");
-
     // top
     $(".top").click(function (e) {
         e.preventDefault();
