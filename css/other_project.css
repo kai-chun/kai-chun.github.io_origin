@@ -27,6 +27,7 @@
 .project_list > li {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     margin: 50px 0;
 }
 
@@ -44,7 +45,7 @@
     opacity: 0.8;
 }
 
-.more_detail p {
+.more_detail > p {
     width: 100%;
     text-align: center;
     position: absolute;
@@ -55,26 +56,28 @@
     padding: 20px;
 }
 
-.project_list img {
+.more_detail img {
     width: 100%;
     height: auto;
 }
 
 .project_description {
-    width: 40%;
+    width: 30%;
 }
 
-.project_description h3 {
+.project_description h3, .modal h3 {
     font-size: 20px;
-    margin: 30px 0;
+    margin-bottom: 30px;
 }
 
 .technology_list {
     display: flex;
+    align-items: center;
 }
 
 .technology_list img{
     width: 80px;
+    margin: 0 10px;
 }
 
 .modal {
@@ -90,26 +93,87 @@
     background-color: rgba(255,255,255,0.9); /* Black w/ opacity */
 }
 
-/* Modal Content (Image) */
+/* Modal Content */
 .modal_content {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: 70px auto;
+    padding: 70px 50px;
+    background-color: white;
+    border: 4px dashed var(--PaleSky);
 }
 
-/* Caption of Modal Image (Image Text) - Same Width as the Image */
+.modal_swiper, .modal_content > img{
+    width: 50%;
+    max-width: 600px;
+    height: 400px;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.modal_swiper img {
+    object-fit: scale-down;
+}
+
+.swiper-slide {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.modal .swiper-button-prev, .modal .swiper-button-next {
+    color: var(--AirForceBlue);
+}
+
+.modal .swiper-button-prev:hover, .modal .swiper-button-next:hover {
+    color: var(--SoftBlue);
+}
+
+.modal .swiper-button-prev {
+    top: 50%;
+    left: 0;
+    right: auto;
+}
+
+.modal .swiper-button-next {
+    top: 50%;
+    left: auto;
+    right: 0;
+}
+
+.modal .modal_swiper img, .modal_img {
+    width: 100%;
+    height: auto;
+}
+
+/* Caption of Modal Image (Image Text) */
 .caption {
-    margin: auto;
     display: block;
-    width: 80%;
-    max-width: 700px;
-    text-align: center;
-    color: #ccc;
-    padding: 10px 0;
-    height: 150px;
+    width: 40%;
+    color: black;
+    padding: 10px;
 }
 
+.caption ul {
+    width: 90%;
+    list-style-type: disc;
+}
+
+.caption li {
+    margin: 20px;
+    padding-left: 10px;
+}
+
+.caption a {
+    display: inline;
+    color: var(--SoftBlue);
+}
+
+.caption a:hover{
+    color: var(--AirForceBlue);
+}
 /* The Close Button */
 .close {
     position: absolute;

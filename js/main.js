@@ -1,3 +1,19 @@
+function showBtnCondition() {
+    if ($(this).scrollTop() > 400) {
+        $('.top').fadeIn();
+    } else {
+        $('.top').fadeOut();
+    }
+}
+$(window).scroll(showBtnCondition);
+
+// function unScroll() {
+//     var top = $(document).scrollTop();
+//     $(document).on("scroll.unable",function (e) {
+//         $(document).scrollTop(top);
+//     });
+// }
+
 $(document).ready(function () {
     // top
     $(".top").click(function (e) {
@@ -18,6 +34,7 @@ $(document).ready(function () {
     $(".more_detail").click(function (e) {
         e.preventDefault();
         $(this).siblings(".modal").fadeIn(600);
+        // $(window).unScroll();
     });
 
     // close
@@ -31,7 +48,7 @@ $(document).ready(function () {
         // Optional parameters
         direction: "horizontal",
         loop: true,
-        speed: 2000,
+        speed: 600,
         autoplay: {
             delay: 2000,
         },
@@ -41,6 +58,20 @@ $(document).ready(function () {
             el: ".swiper-pagination",
             clickable: true
         },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev"
+        }
+    });
+
+    // swiper
+    const modal_swiper = new Swiper(".modal_swiper", {
+        // Optional parameters
+        direction: "horizontal",
+        loop: true,
+        speed: 600,
 
         // Navigation arrows
         navigation: {

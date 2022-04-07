@@ -137,7 +137,7 @@ footer .medium_logo{
 }
 
 .top {
-    display: block;
+    display: none;
     position: fixed;
     right: 50px;
     bottom: 50px;

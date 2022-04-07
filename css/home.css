@@ -123,3 +123,7 @@
 .other_project .swiper-button-prev, .other_project .swiper-button-next, .other_project .swiper-pagination {
     color: var(--AirForceBlue);
 }
+
+.other_project .swiper-button-prev:hover, .other_project .swiper-button-next:hover {
+    color: var(--SoftBlue);
+}
