@@ -154,11 +154,13 @@
     width: 40%;
     color: black;
     padding: 10px;
+    position: relative;
 }
 
 .caption ul {
     width: 90%;
     list-style-type: disc;
+    margin: 50px 0;
 }
 
 .caption li {
